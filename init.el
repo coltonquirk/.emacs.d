@@ -231,6 +231,8 @@
 ;; (use-package evil-magit
 ;;   :after magit)
 
+;; TODO forge?
+
 ;; TYPST
 (use-package typst-ts-mode
   :vc (:url "https://codeberg.org/meow_king/typst-ts-mode.git"))
@@ -276,7 +278,7 @@
 ;; (use-package julia-repl)
 ;; (use-package julia-vterm)
 
-;; Maybe get better unicode stuf.
+;; Maybe get better unicode stuff.
 (set-language-environment "UTF-8")
 
 

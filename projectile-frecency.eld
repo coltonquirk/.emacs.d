@@ -1,0 +1,1 @@
+(("/home/coltonq/Desktop/coltonquirk.github.io/" ("index.qmd" 1 1790185876)) ("/home/coltonq/.emacs.d/" (".git/COMMIT_EDITMSG" 1 1790189507) ("custom.el" 4 1790188280) ("README.md" 1 1790185572) ("init.el" 2 1790188676)))

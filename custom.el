@@ -7,11 +7,12 @@
  ;; If there is more than one, they won't work right.
  '(package-selected-packages
    '(all-the-icons auctex catppuccin-theme company company-math counsel
-		   doom-modeline doom-themes eglot-jl ein eshell-vterm
-		   ess evil evil-collection general helpful hydra ivy
-		   ivy-rich julia-formatter julia-mode julia-repl
+		   counsel-projectile doom-modeline doom-themes
+		   eglot-jl ein eshell-vterm ess evil evil-collection
+		   evil-magit general helpful hydra ivy ivy-rich
+		   julia-formatter julia-mode julia-repl
 		   julia-repl-mode julia-snail julia-ts-mode
-		   julia-vterm lsp-julia nov ob-julia-vterm org
+		   julia-vterm lsp-julia magit nov ob-julia-vterm org
 		   org-roam pdf-tools pdf-view-mode projectile
 		   quarto-mode rainbow-delimiters swiper treesit-auto
 		   typst-preview typst-ts-mode weather-scout))
