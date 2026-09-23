@@ -189,6 +189,7 @@
 
 (use-package evil-collection
   :after evil
+  :ensure t
   :config
   (evil-collection-init))
 
@@ -208,12 +209,27 @@
 (use-package projectile
   :diminish projectile-mode
   :config (projectile-mode)
+  :custom ((projectile-completion-system 'ivy))
   :bind-keymap
   ("C-c p" . projectile-command-map)
   :init
   (when (file-directory-p "~/Projects/Code") ;; Where to check for projects? Need to change this.
     (setq projectile-project-search-path '("~/Projects/Code")))
   (setq projectile-switch-project-action #'projectile-dired))  ;; load dired when switiching projects.
+
+(use-package counsel-projectile
+  :config (counsel-projectile-mode))
+
+;; Magit
+(use-package magit
+  :custom
+  ;; Might get rid of this custom
+  (magit-display-buffer-function #'magit-display-buffer-same-window-except-diff-v1))
+
+;; evil-magit is now part of evil-collection
+;; which I have above.
+;; (use-package evil-magit
+;;   :after magit)
 
 ;; TYPST
 (use-package typst-ts-mode
@@ -260,6 +276,7 @@
 ;; (use-package julia-repl)
 ;; (use-package julia-vterm)
 
+;; Maybe get better unicode stuf.
 (set-language-environment "UTF-8")
 
 
